@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; /* Ubah warna tombol sesuai kebutuhan */
+  font-size: 20px; /* Ukuran font untuk tombol */
+}
+
+.swiper-pagination {
+  margin: 0 20px; /* Jarak antara tombol dan pagination */
+  display: flex; /* Menggunakan flex untuk mengatur pagination */
+  justify-content: center; /* Mengatur pagination agar berada di tengah */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 0; /* Pastikan tidak ada margin tambahan */
+}
+
+/* Responsif */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 16px; /* Ukuran lebih kecil di mobile */
+  }
+}
+
+
+ @keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}

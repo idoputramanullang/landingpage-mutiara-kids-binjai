@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex justify-center w-full mb-16 text-white">
+        <nav class="fixed top-0 left-0 z-50 flex items-center w-full h-16 bg-purple-600">
+            <div class="container max-w-screen-lg mx-auto">
+                <div class="flex items-center justify-between">
+                    <a href="#home" class="flex items-center justify-start gap-5">
+                        <img class="w-auto h-8" src="/img/logo.png" alt="hero">
+                        <div class="font-bold ">Mutiara Kids</div>
+                    </a>
+                    <div class="block lg:hidden">
+                        <button id="menu-button" class="text-white">
+                            <i class="p-2 text-lg fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="hidden space-x-4 lg:flex">
+                        <a href="#tentang" class="px-4 py-2 ">Tentang</a>
+                        <a href="#layanan" class="px-4 py-2 ">Layanan</a>
+                        <a href="#galeri" class="px-4 py-2 ">Galeri</a>
+                        <a href="#testimoni" class="px-4 py-2 ">Tesnimoni</a>
+                        <a href="#kontak" class="px-4 py-2 ">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="menu" class="fixed top-0 left-0 z-40 hidden w-full pt-16 bg-purple-600">
+            <a href="#tentang" class="block px-8 py-2 ">Tentang</a>
+            <a href="#layanan" class="block px-8 py-2 ">Layanan</a>
+            <a href="#galeri" class="block px-8 py-2 ">Galeri</a>
+            <a href="#testimoni" class="block px-8 py-2 ">Tesnimoni</a>
+            <a href="#kontak" class="block px-8 py-2 ">Kontak</a>
+        </div>
+    </header> 
+    <section id="home" class="flex items-center justify-center w-full min-h-screen">
+        <div class="container max-w-screen-lg" data-aos="fade-down" data-aos-duration="1500"> 
+            <div class="flex flex-col items-center justify-around max-w-screen-lg gap-5 lg:flex-row">
+                
+                <div class="text-center md:w-1/2 md:text-left">
+                    <h1 class="mb-4 text-5xl font-bold text-purple-600">
+                        Mutiara Kids Binjai
+                    </h1>
+                    <p class="mb-6 text-lg font-semibold text-gray-600">
+                        Pusat terapi tubuh kembang anak & anak berkebutuhan khusus
+                    </p>
+                    <div class="flex justify-center mb-8 text-white md:justify-start">
+                        <button class="px-6 py-2 bg-purple-600 rounded-xl">
+                            Konsultasi gratis
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center md:w-1/2 lg:w-1/3 md:text-left">
+                    <img alt="Logo" src="/img/hero.png" class="w-full h-auto rounded-lg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tentang" class="flex justify-center w-full pt-20">
+        <div class="container max-w-screen-lg" data-aos="fade-up" data-aos-duration="2000">
+            <div class="flex items-center justify-center mb-10">
+                <h1 class="text-5xl font-bold  relative inline-block hover:after:w-full after:w-0 after:h-0.5 after:bg-purple-600 after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 ">
+                    Tentang kami
+                </h1>
+            </div>
+            <div class="flex flex-col items-center justify-around max-w-screen-lg gap-5 lg:flex-row">
+                <div class="text-center md:w-1/2 lg:w-1/3 md:text-left">
+                    <img src="img/galeri1.jpg" alt="Tentang" class="w-full rounded-lg" />
+                </div>
+                <div class="text-center md:w-1/2 md:text-left">
+                    <div class="text-left">
+                        <h1 class="mt-2 text-2xl font-bold text-purple-600">Ebenezer Manullang S.Psi M.Psi Cth.NLP</h1>
+                        <p class="mt-4 text-justify text-gray-600">Dipimpin oleh Kepala Sekolah ebenezer Manullang, Mutiara Kids
+                            berkomitmen untuk memberikan perhatian dan perawatan
+                            terbaik bagi setiap anak. Dengan pendekatan individual dan tenaga profesional berpengalaman,
+                            kami memastikan bahwa
+                            setiap anak menerima terapi yang sesuai dengan kebutuhan spesifik mereka.</p>
+                            <div class="flex items-center justify-start pt-3 space-x-8">
+                                <div class="text-center">
+                                    <p class="text-3xl font-semibold">
+                                        10<span class="font-bold text-purple-600">+</span>
+                                    </p>
+                                    <p class="font-semibold text-gray-500">Guru</p>
+                                </div> 
+                                <div class="text-center">
+                                    <p class="text-3xl font-semibold">
+                                        100<span class="font-bold text-purple-600">+</span>
+                                    </p>
+                                    <p class="font-semibold text-gray-500">Alumni</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="layanan" class="flex justify-center w-full pt-20">
+        <div class="container max-w-screen-lg">
+            <div class="flex items-center justify-center mb-10">
+                <h1 class="text-5xl font-bold  relative inline-block hover:after:w-full after:w-0 after:h-0.5 after:bg-white after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 ">
+                    Layanan
+                </h1>
+            </div>
+            <div class="flex flex-col items-center justify-around max-w-screen-lg gap-20 lg:flex-row" > 
+                    <div class="w-full space-y-8 border-2 border-purple-600 rounded-lg md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="relative w-full p-6 bg-white rounded-lg shadow-lg">
+                            <div class=" text-center absolute top-6 left-2 bg-purple-600 text-white font-bold py-2 px-4 rounded-full rounded-bl-none rounded-tr-none w-[calc(100%+2rem)]">
+                                Menangani
+                            </div>
+                            <div class="absolute w-1/2 right-5 top-32">
+                                <img src="img/ilustrasi1.svg" alt="Tentang" class="rounded-lg" />
+                            </div>
+                            <p class="mt-12 text-gray-600">
+                            <ul class="pl-5 space-y-2 list-disc">
+                                <li>Autisme</li>
+                                <li>Obesitas</li>
+                                <li>Disleksia</li>
+                                <li>Dispraksia</li>
+                                <li>Clumsiness</li>
+                                <li>Downsindrom</li>
+                                <li>Dan lain-lain</li>
+                                <li>Retardasi mental</li>
+                                <li>Sindrom Asperger</li>
+                                <li>Gangguan perilaku</li>
+                                <li>Kesulitan belajar</li>
+                                <li>Gangguan bicara dan bahasa</li>
+                                <li>Gangguan perkembangan motorik kasar dan halus</li>
+                                <li>Gangguan Pemusatan Perhatian dan Hiperaktif (GPPH)</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="w-full space-y-8 md:w-1/2">
+                        <div class="relative w-full p-6 bg-white border-2 border-purple-600 rounded-lg shadow-lg"  data-aos="fade-left" data-aos-duration="1000">
+                            <div class=" text-center absolute top-6 right-2 bg-purple-600 text-white font-bold py-2 px-4 rounded-full rounded-bl-none rounded-tr-none w-[calc(100%+2rem)]">
+                                Menangani
+                            </div>  
+                            <div class="absolute w-1/2 right-5 top-32">
+                                <img src="img/ilustrasi2.svg" alt="Tentang" class="rounded-lg transform scale-x-[-1]" />
+                            </div>
+                            <p class="mt-12 text-gray-600">
+                            <ul class="pl-5 space-y-2 list-disc">
+                                <li>Asessment / Screening Tubuh kembang</li>
+                                <li>Terapi kegiatan belajar di luar</li>
+                                <li>Sensorik integrasi</li>
+                                <li>Terapi oral motor</li>
+                                <li>Terapi perilaku</li>
+                                <li>Remedial terapi</li>
+                                <li>Okupasi terapi</li>
+                                <li>Terapi wicara</li>
+                                <li>Terapi bermain</li>
+                                <li>Terapi pijat</li>
+                                <li>Brain gym</li>
+                            </ul>
+                            </p>
+                        </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="h-auto pt-20 ">
+        <div class="container max-w-screen-lg">
+            <div class="flex items-center justify-center mb-10">
+                <h1
+                    class="text-5xl font-bold  relative inline-block hover:after:w-full after:w-0 after:h-0.5 after:bg-white after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 ">
+                    Galeri
+                </h1>
+            </div>
+            <div class="w-full py-8">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-2">
+                        <img src="/img/galeri3.jpg" alt="Gambar 1" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down">
+                    </div>
+                    <div class="col-span-1">
+                        <img src="/img/galeri2.jpg" alt="Gambar 2" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div>
+                    <div class="col-span-1">
+                        <img src="/img/galeri4.jpg" alt="Gambar 3" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div>
+                    <div class="col-span-1">
+                        <img src="/img/galeri11.jpg" alt="Gambar 4" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div>
+                    <div class="col-span-1">
+                        <img src="/img/galeri12.jpg" alt="Gambar 5" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div> 
+                    <div class="col-span-1">
+                        <img src="/img/galeri19.jpg" alt="Gambar 5" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div> 
+                    <div class="col-span-1">
+                        <img src="/img/galeri18.jpg" alt="Gambar 5" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div> 
+                    <div class="col-span-1">
+                        <img src="/img/galeri17.jpg" alt="Gambar 5" class="object-cover w-full h-full rounded-lg" data-aos="zoom-in-down" data-aos-duration="1000">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="testimoni" class="h-auto pt-20">
+        <div class="container max-w-screen-lg" data-aos="fade-down" data-aos-duration="1000">
+            <div class="flex items-center justify-center mb-10">
+                <h1 class="text-5xl font-bold  relative inline-block hover:after:w-full after:w-0 after:h-0.5 after:bg-white after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 ">
+                    Testimoni
+                </h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="max-w-lg p-6 mx-auto ">
+                            <div class="relative p-6 border border-purple-600 rounded-lg">
+                                <div class="absolute top-0 right-0 text-6xl text-purple-600 transform translate-x-1/2 -translate-y-1/2">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <img alt="Portrait of Jane Doe" class="w-12 h-12 mr-4 rounded-full"
+                                        src="img/galeri14.jpg" />
+                                    <div>
+                                        <h3 class="text-lg font-bold ">Ibu Enjel</h3>
+                                        <p class="flex gap-1 pt-2 text-sm text-yellow-500">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="">
+                                    "Saya sangat bersyukur telah memilih Mutiara Kids untuk anak saya. Program terapi
+                                    yang mereka tawarkan sangat membantu
+                                    dalam perkembangan motorik dan sosial anak saya. Stafnya sangat profesional dan
+                                    peduli, membuat anak saya merasa nyaman
+                                    setiap kali datang"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="max-w-screen-lg p-6 mx-auto ">
+                             <div class="relative p-6 border border-purple-600 rounded-lg">
+                                <div class="absolute top-0 right-0 text-6xl text-purple-600 transform translate-x-1/2 -translate-y-1/2">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <img alt="Portrait of John Doe" class="w-12 h-12 mr-4 rounded-full"
+                                        src="img/galeri7.jpg" />
+                                    <div>
+                                        <h3 class="text-lg font-bold ">Pak jaya</h3>
+                                        <p class="flex gap-1 pt-2 text-sm text-yellow-500">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="">
+                                    "Mutiara Kids telah menjadi tempat yang luar biasa untuk anak kami. Pendekatan yang
+                                    penuh kasih dan perhatian yang
+                                    diberikan oleh tim sangat membantu anak kami berkembang dengan baik. Saya melihat
+                                    kemajuan yang signifikan dalam
+                                    interaksi sosialnya. Terima kasih Mutiara Kids!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="max-w-screen-lg p-6 mx-auto ">
+                             <div class="relative p-6 border border-purple-600 rounded-lg">
+                                <div
+                                    class="absolute top-0 right-0 text-6xl text-purple-600 transform translate-x-1/2 -translate-y-1/2">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <img alt="Portrait of Alice Doe" class="w-12 h-12 mr-4 rounded-full"
+                                        src="img/galeri13.jpg" />
+                                    <div>
+                                        <h3 class="text-lg font-bold ">Pak Muliadi</h3>
+                                        <p class="flex gap-1 pt-2 text-sm text-yellow-500">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="">
+                                    "Setelah menyekolahkan anak saya di Mutiara Kids, saya sangat puas dengan hasilnya.
+                                    Terapi yang dirancang khusus dan
+                                    suasana yang ramah membuat anak saya merasa senang untuk belajar dan bermain. Saya
+                                    sangat merekomendasikan Mutiara Kids
+                                    kepada orang tua lain!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="max-w-screen-lg p-6 mx-auto ">
+                             <div class="relative p-6 border border-purple-600 rounded-lg">
+                                <div
+                                    class="absolute top-0 right-0 text-6xl text-purple-600 transform translate-x-1/2 -translate-y-1/2">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <img alt="Portrait of Alice Doe" class="w-12 h-12 mr-4 rounded-full"
+                                        src="img/galeri8.jpg" />
+                                    <div>
+                                        <h3 class="text-lg font-bold ">Ibu Angggun</h3>
+                                        <p class="flex gap-1 pt-2 text-sm text-yellow-500">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="">
+                                    "Di Mutiara Kids, anak saya tidak hanya menerima terapi yang berkualitas, tetapi
+                                    juga mendapatkan banyak teman. Kami
+                                    melihat perubahan positif dalam kepercayaan dirinya. Terima kasih kepada semua staf
+                                    di Mutiara Kids yang telah
+                                    berkontribusi pada perkembangan anak kami!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="max-w-screen-lg p-6 mx-auto ">
+                             <div class="relative p-6 border border-purple-600 rounded-lg">
+                                <div
+                                    class="absolute top-0 right-0 text-6xl text-purple-600 transform translate-x-1/2 -translate-y-1/2">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <img alt="Portrait of Bob Doe" class="w-12 h-12 mr-4 rounded-full"
+                                        src="img/galeri15.jpg" />
+                                    <div>
+                                        <h3 class="text-lg font-bold ">Bu putri</h3>
+                                        <p class="flex gap-1 pt-2 text-sm text-yellow-500">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="">
+                                    "Mutiara Kids adalah pilihan tepat untuk anak berkebutuhan khusus. Kami sangat
+                                    terkesan dengan tim pengajar yang
+                                    terlatih dan berdedikasi. Anak saya tidak hanya mendapatkan terapi yang diperlukan,
+                                    tetapi juga pengalaman belajar yang
+                                    menyenangkan. Saya tidak bisa lebih bahagia dengan kemajuannya!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-4 swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="kontak" class="w-full" data-aos="fade-down" data-aos-duration="1000">
+        <div class="flex items-center justify-center pt-20 mb-10">
+            <div
+                class="text-5xl font-bold  relative inline-block hover:after:w-full after:w-0 after:h-0.5 after:bg-white after:absolute after:left-0 after:bottom-0 after:transition-all after:duration-300 ">
+                Kontak
+            </div>
+        </div>
+        <div class="container grid w-full max-w-screen-lg grid-cols-1 gap-5 mx-auto mb-10 md:grid-cols-3">
+            <a href="https://wa.me/6281362497853" target="_blank" class="w-full p-4 bg-white border border-gray-300 rounded-lg">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="/img/wa.png" alt="" class="w-12 h-12">
+                    <div class="w-full">
+                        <div class="text-xl font-bold text-green-500">WhatsApp </div>
+                        <div class="font-semibold text-gray-700"> 0813-6249-7853 </div>
+                        <div class="flex items-center justify-between">
+                            <div class="font-semibold text-gray-700">Kirim pesan</div>
+                            <div class="pr-10 text-xl font-bold text-green-500"><i
+                                    class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="container w-full p-4 bg-white border border-gray-300 rounded-lg">
+                <a href="https://www.facebook.com/share/MowWtpnaCVQrd9xw/" target="_blank" class="flex items-center gap-4 mb-4">
+                    <img src="/img/fb.png" alt="" class="w-12 h-12">
+                    <div class="w-full">
+                        <div class="text-xl font-bold text-blue-600">Facebook </div>
+                        <div class="font-semibold text-gray-700">Mutiara</div>
+                        <div class="flex items-center justify-between">
+                            <div class="font-semibold text-gray-700">Kirim pesan</div>
+                            <div class="pr-10 text-xl font-bold text-blue-600"><i
+                                    class="fa-solid fa-arrow-right-long"></i></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full p-4 bg-white border border-gray-300 rounded-lg">
+                <a href="https://www.instagram.com/mutiara_kids.binjai?igsh=dTQ3Y2xtb3Q2dWVs" target="_blank" class="flex items-center gap-4 mb-4">
+                    <img src="/img/ig.png" alt="" class="w-12 h-12">
+                    <div class="w-full">
+                        <div class="text-xl font-bold text-pink-600">Instagram</div>
+                        <div class="font-semibold text-gray-700">Mutiara</div>
+                        <div class="flex items-center justify-between">
+                            <div class="font-semibold text-gray-700">Kirim pesan</div>
+                            <div class="pr-10 text-xl font-bold text-pink-600">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full max-w-screen-lg mx-auto ">
+            <div class="overflow-hidden rounded-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6387.530513286433!2d98.50432516844799!3d3.620953956032913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303129d526428f7b%3A0x6eb9d4c9da7d59cd!2sTerapi%20Tumbuh%20Kembang%20Anak%20Mutiara%20Kids%20Binjai!5e0!3m2!1sid!2sid!4v1728645031880!5m2!1sid!2sid"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
