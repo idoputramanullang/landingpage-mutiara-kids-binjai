@@ -12,7 +12,7 @@ const swiper = new Swiper('.mySwiper', {
   },
   breakpoints: {
     1024: {
-      slidesPerView: 3, // Menampilkan 3 card pada ukuran laptop
+      slidesPerView: 2, 
       spaceBetween: 30,
     },
   },
